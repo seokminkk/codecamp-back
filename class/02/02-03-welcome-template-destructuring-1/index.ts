@@ -12,7 +12,7 @@ function getWelcomeTemplate({ name, age, school, createdAt }: typeof myUser) {
       </html>
   `;
 }
-//
+
 const myUser = {
   name: "철수",
   age: 13,
