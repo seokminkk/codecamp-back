@@ -6,6 +6,5 @@ function getToken(count: number) {
 
   console.log(result); // 만들어진 토큰 출력
 }
-//
 
 getToken(5);
