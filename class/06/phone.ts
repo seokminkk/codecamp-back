@@ -1,8 +1,12 @@
 // const coolsms = require('coolsms-node-sdk').default;
 import CoolsmsMessageService, { Message } from "coolsms-node-sdk";
 import coolsms from "coolsms-node-sdk";
-
-const messageService = new coolsms("api key", "secrete key");
+import * as dotenv from "dotenv";
+dotenv.config();
+const messageService = new coolsms(
+  process.env.SMS_API_KEY!,
+  process.env.SMS_SECRET_KEY!
+);
 
 const list: Message[] = [
   {
@@ -54,7 +58,7 @@ export async function sendTokenToSMS(myphone: string, token: string) {
   const result = await messageService
     .sendOne({
       to: myphone,
-      from: "01012345678",
+      from: "01099531506",
       text: `smstest token ! 토큰은 ${token}`,
       autoTypeDetect: true,
     })
