@@ -9,7 +9,7 @@
 # RUN cd ./aaa
 
 # RUN node index.js
-#s
+
 
 FROM node
 
