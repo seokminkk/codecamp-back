@@ -1,7 +1,7 @@
 FROM node
 
 WORKDIR /myfolder/
-
+# 
 
 COPY ./package.json /myfolder/
 COPY ./package-lock.json /myfolder/
