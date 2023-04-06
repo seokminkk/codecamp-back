@@ -12,6 +12,6 @@ RUN npm install
 RUN npm install -g ts-node typescript
 
 COPY . /myfolder/
-# git
+
 # CMD ts-node boardsSwagger.tss
 CMD [ "ts-node", "boardsSwagger.ts" ]
