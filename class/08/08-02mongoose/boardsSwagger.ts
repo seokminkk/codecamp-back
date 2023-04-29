@@ -107,7 +107,7 @@ const myUser = {
   school: "다람쥐초등학교",
   email: "2010-09-07",
 };
-//몽고db접속!
+//몽고db접속
 mongoose.connect("mongodb://my-database:27017/dockerDB");
 
 //백엔드 api서버 실행
